@@ -2,9 +2,12 @@
 
 Take high-quality screenshots from client, preview them with NUI, and upload to FiveMerr API.  
 
+# Preview
+![image](https://raw.githubusercontent.com/suryabhaiin/sb-takescreenshot/refs/heads/main/image.png)
+
 ## 🚀 Features
 - ✅ Take screenshots from any player
-- ✅ Show stylish NUI preview with Save/Retake/Cancel options
+- ✅ Show stylish NUI preview with Save/Retake/Cancel options & After confir send to API
 - ✅ Upload directly to FiveMerr API
 - ✅ Easy exports for use in other scripts
 
