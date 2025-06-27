@@ -16,14 +16,12 @@ git clone https://github.com/YourUsername/sb-takescreenshot.git
 Add to your server.cfg:
 ```ini
 ensure sb-takescreenshot
-set myscreenshot_fivmerr_api_key "YourRealApiKeyHere"
+set screenshot_fivemerr_api_key "YourRealApiFivemerrKeyHere"
 ```
 📝 Configuration
 Edit config.lua (if exists) or ensure your Config.ApiUrl and Config.ApiKey are set properly in the script.
 
-API Key: Reads from myscreenshot_fivmerr_api_key server variable
-
-API URL: Default set to https://api.fivemerr.com/v1/media/images
+API Key: Reads from screenshot_fivemerr_api_key server variable
 
 🖥️ Usage
 ➡️ From other scripts
