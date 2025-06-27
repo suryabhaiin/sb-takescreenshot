@@ -21,7 +21,7 @@ AddEventHandler("sb-takescreenshot:userChoice", function(choice)
                         if data and data.url then
                             if Config.debug then print("✅ Image uploaded: " .. data.url) end
                             TriggerClientEvent("sb-takescreenshot:screenshotresponse", src, data.url)
-                            TriggerEvent("sb-takescreenshot:screenshotresponse", data.url)
+                            TriggerEvent("sb-takescreenshot:screenshotresponse", src, data.url)
                             TriggerClientEvent("sb-takescreenshot:notify", src, "✅ Image uploaded: " .. data.url)
                         else
                             if Config.debug then print("❌ API returned no URL") end

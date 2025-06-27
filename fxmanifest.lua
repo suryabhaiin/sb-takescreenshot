@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Surya Bhai'
 description 'Secure Screenshot Capture with Preview, Save, Retake, Cancel'
-version '1.3.0'
+version '1.0.0'
 
 client_scripts {
     'client.lua'
@@ -21,5 +21,9 @@ files {
     'html/script.js',
 }
 server_exports {
+    'takeScreenshotFlow'
+}
+
+client_exports {
     'takeScreenshotFlow'
 }
