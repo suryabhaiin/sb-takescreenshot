@@ -25,7 +25,13 @@ API Key: Reads from screenshot_fivemerr_api_key server variable
 
 🖥️ Usage
 ➡️ From other scripts
-You can call the screenshot flow directly:
+You can call the screenshot export directly:
+
+server:
 ```Lua
 exports['sb-takescreenshot']:takeScreenshot(target_source)
+```
+client:
+```Lua
+exports['sb-takescreenshot']:takeScreenshot()
 ```
