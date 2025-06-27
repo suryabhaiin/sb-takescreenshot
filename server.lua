@@ -1,15 +1,3 @@
-ESX = nil
-QBCore = nil
-
-if GetResourceState('es_extended') == 'started' then
-    ESX = exports['es_extended']:getSharedObject()
-end
-
-if GetResourceState('qb-core') == 'started' then
-    QBCore = exports['qb-core']:GetCoreObject()
-elseif GetResourceState('qbox-core') == 'started' then
-    QBCore = exports['qbox-core']:GetCoreObject()
-end
 
 local pendingScreenshots = {}
 
