@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Screenshot Preview</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .polaroid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+      }
+
+      .polaroid {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.7);
+        text-align: center;
+      }
+
+      .polaroid img {
+        max-width: 100vh; /* doubled width */
+        max-height: 100vh;
+        border-radius: 4px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .buttons button {
+          margin-top: 10px;
+        padding: 12px 28px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        min-width: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      #saveBtn {
+        background: #28a745;
+        color: white;
+      }
+
+      #saveBtn:hover {
+        background: #218838;
+      }
+
+      #retakeBtn {
+        background: #007bff;
+        color: white;
+      }
+
+      #retakeBtn:hover {
+        background: #0069d9;
+      }
+
+      #cancelBtn {
+        background: #dc3545;
+        color: white;
+      }
+
+      #cancelBtn:hover {
+        background: #c82333;
+      }
+      #notification {
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.8);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        z-index: 9999;
+    }
+
+
+  </style>
+</head>
+<body style="display: none;">
+  <div class="polaroid-container">
+    <div class="polaroid">
+      <img id="screenshot" src="" alt="Screenshot Preview" />
+      <div class="buttons">
+        <button id="saveBtn"><i class="fas fa-check"></i> Save</button>
+        <button id="retakeBtn"><i class="fas fa-redo"></i> Retake</button>
+        <button id="cancelBtn"><i class="fas fa-times"></i> Cancel</button>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
