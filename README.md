@@ -43,13 +43,27 @@ exports['sb-takescreenshot']:takeScreenshot(target_source)
 
 🔔 Receive screenshot response
 Listen to the exported response event in your script:
+
+Client-Side Handling (in your client script)
 ```Lua
+-- Listen for the screenshot response
 RegisterNetEvent('sb-takescreenshot:screenshotresponse')
-AddEventHandler('sb-takescreenshot:screenshotresponse', function(source, url)
-    print("Received screenshot URL for player "..source..": "..url)
-    -- Your logic here (store in DB, logs, etc.)
+AddEventHandler('sb-takescreenshot:screenshotresponse', function(url)
+    -- Your client-side logic here
+    print('[CLIENT] Received screenshot URL:', url)
 end)
 ```
+
+Server-Side Handling (in your server script)
+```Lua
+-- Listen for the screenshot response
+RegisterNetEvent('sb-takescreenshot:screenshotresponse')
+AddEventHandler('sb-takescreenshot:screenshotresponse', function(source, url)
+    -- Your server-side logic here
+    print(('[SERVER] Received screenshot URL from player %s: %s'):format(source, url))
+end)
+```
+
 | Note: This event is triggered on both server and client side with the uploaded image URL.
 
 🛠️ Dependencies: [screenshot-basic](https://github.com/citizenfx/screenshot-basic)
