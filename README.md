@@ -11,7 +11,7 @@ Take high-quality screenshots from client, preview them with NUI, and upload to 
 ## ⚙️ Installation
 1. Download or clone the resource:
 ```bash
-git clone https://github.com/YourUsername/sb-takescreenshot.git
+git clone https://github.com/suryabhaiin/sb-takescreenshot.git
 ```
 Add to your server.cfg:
 ```ini
