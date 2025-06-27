@@ -1,10 +1,10 @@
 
 local pendingScreenshots = {}
 
-RegisterCommand("takescreen", function(source)
-    local src = source
-    takeScreenshot(src)
-end)
+-- RegisterCommand("takescreen", function(source)
+--     local src = source
+--     takeScreenshot(src)
+-- end)
 
 RegisterNetEvent("sb-takescreenshot:userChoice")
 AddEventHandler("sb-takescreenshot:userChoice", function(choice)
